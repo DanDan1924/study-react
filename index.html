@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <title></title>
+        <style>
+            html,body{font-family:PingFangSC-Semibold,PingFang SC; color: #333; font-weight: 400; font-family:'PingFangSC'; background: #fff;font-size: 14px; }
+            *{margin: 0;padding: 0;}
+            .container{max-width: 864px; margin: 0 auto; padding: 80px;}
+            .top_logo{display: flex;}
+            .top_logo_img{width: 100px;height: 100px;margin-right: 20px;}
+            .top_logo_info .title{font-size: 18px; font-weight: 600; margin-bottom: 10px;}
+            .invoice_info{font-size: 14px; margin-bottom: 5px;}
+            .invoice_info:last-child{ margin-bottom: 0;}
+            .invoice_info span{font-weight: 600; margin-right: 10px;}
+
+            .top_invoice{margin-top: 40px;}
+            .top_invoice h3{font-size: 44px; font-weight: 600; margin-bottom: 15px;}
+
+            .description{margin-top: 62px;}
+            .description_contain{border-bottom: 2px solid #333;border-top: 2px solid #333;}
+            .description_head{font-size: 18px; font-weight: 600; padding-bottom: 12px;}
+            .row{display: flex; width: 100%;}
+            .row .col12{width: 50%;}
+            .row .col6{width: 25%; text-align: center; align-self: center;}
+            .row .col6,.row .col12{display: inline-block;}
+            .description_list{padding: 16px 0; border-bottom: 1px solid #E5E5E5;}
+            .description .col7_title{width: 75%; text-align: right;}
+            .description .col3_info{width: 25%; margin-left: 10px;}
+            .description .money_each{padding-top: 10px; padding-bottom: 20px;}
+            .description .money_each .row{ margin-top: 10px;}
+            .description .money_total{margin-top: 20px;font-weight: 600;}
+            .description .money_total .col7_title{align-self: center;}
+            .description .money_total .col3_info{font-weight: 600; font-size: 24px;}
+
+            .common-title{font-size: 18px; font-weight: 600;margin-top: 57px;}
+            .red{color: #FF5A5F; font-weight: 600;}
+        </style>
+    </head>
+    <body>
+        <!-- ?: 表示我知道的可有可无  （）里是需要渲染的内容-->
+        <div class="container">
+            <div class="top_logo">
+                <img class="top_logo_img" src="https://img.uhomes.com/static/wxapp/logo/logo2.png" alt="">
+                <div class="top_logo_info">
+                    <p class="title">(UHOUZZ INTERNATIONAL CO., LIMITED)</p>
+                    <p class="invoice_info"><span>Company address:</span>(Rm. 19C, Lockhart Ctr., 301-307 Lockhart Rd., Wan Chai, Hong Kong)</p>
+                    <p class="invoice_info"><span>Tel:</span>(0207 242 0825)</p>
+                    <p class="invoice_info"><span>Tel:</span>(0207 242 0825)</p>
+                </div>
+            </div>
+            <div class="top_invoice">
+                <h3>INVOICE</h3>
+                <p class="invoice_info"><span>Bill To:</span>(0207 242 0825)</p>
+                <p class="invoice_info"><span>Company address:</span>(0207 242 0825)</p>
+                <p class="invoice_info"><span>Invoice Date:</span>(0207 242 0825)</p>
+                <p class="invoice_info"><span>Invoice Number:</span>(0207 242 0825)</p>
+                <p class="invoice_info"><span>PO Number:</span>(0207 242 0825)</p>
+            </div>
+
+            <div class="description">
+                <div class="row description_head">
+                    <p class="col12">Description</p>
+                    <p class="col6">VAT</p>
+                    <p class="col6">Amount</p>
+                </div>
+                <div class="description_contain">
+                    <!-- 此处有循环 start -->
+                    <div class="row description_list">
+                        <p class="col12">(If this invoice was sent in error, please contact me on  rio.cao@uhomes.com)</p>
+                        <p class="col6">(20%)</p>
+                        <p class="col6">(15,206.58)</p>
+                    </div>
+                    <div class="row description_list">
+                        <p class="col12">(If this invoice was sent in error, please contact me on  rio.cao@uhomes.com)</p>
+                        <p class="col6">(20%)</p>
+                        <p class="col6">(15,206.58)</p>
+                    </div>
+                    <!-- 此处有循环 end -->
+                    <div class="money_each">
+                        <!-- ?: -->
+                        <div class="row">
+                            <p class="col7_title">subtotal:</p>
+                            <p class="col3_info">(123213213)</p>
+                        </div>
+                        <!-- ?: -->
+                        <div class="row">
+                            <p class="col7_title">Total VAT:</p>
+                            <p class="col3_info">(123213213)</p>
+                        </div>
+                        <!-- ?: -->
+                        <div class="row">
+                            <p class="col7_title">Bank transfer fee:</p>
+                            <p class="col3_info">(123213213)</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 底部total money -->
+                <div class="row money_total">
+                    <p class="col7_title">TOTAL:</p>
+                    <p class="col3_info">(123213213)</p>
+                </div>
+            </div>
+
+            
+            <div class="common-title">Due Date: (18/12/2019)</div>
+            <!-- 此处有循环 start-->
+            <div style="margin-top: 30px;">
+                <p class="invoice_info"><span>Bank Name:</span>(0207 242 0825)</p>
+                <p class="invoice_info"><span>Bank Address:</span>(0207 242 0825)</p>
+                <p class="invoice_info"><span>Account Name:</span>(0207 242 0825)</p>
+                <p class="invoice_info"><span>Account Number:</span>(0207 242 0825)</p>
+                <p class="invoice_info"><span>Swift Code:</span>(0207 242 0825)</p>
+            </div>
+            <!-- 此处有循环 end-->
+            <div class="common-title">Important Notes</div>
+            <p style="margin-top: 20px;">Payment Reference: IGB191218004 <span class="red">（you must use this）</span></p>
+            <p style="margin-top: 10px;">Please notice that we can only recognize the payment from INVOICE NUMBER</p>
+            <p style="margin-top: 10px;">Just kindly remind the difference between ACCOUNT NAME and COMPANY NAME please.</p>
+        </div>
+    </body>
+
+</html>

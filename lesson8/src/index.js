@@ -8,8 +8,7 @@ import "./index.css";
 
 class ClassComponent extends Component {
   static defaultProps = {
-    color: "pink",
-    name: '哈哈哈'
+    color: "pink"
   };
   render() {
     return (
@@ -31,9 +30,9 @@ const jsx = (
     <a href="https://www.kaikeba.com/">开课吧</a>
     <ClassComponent name="class" color="red" />
     <FunctionComponent name="function" />
-    {[1, 2].map(item => (
+    {/* {[1, 2].map(item => (
       <React.Fragment key={item}>{item}</React.Fragment>
-    ))}
+    ))} */}
     {/* <>
       <h1>aaa</h1>
       <h1>bbb</h1>

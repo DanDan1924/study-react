@@ -59,6 +59,7 @@ function updateFunctionComponent(vnode) {
 
 // 更新属性值，如className、nodeValue等
 function updateNode(node, nextVal) {
+  
   Object.keys(nextVal)
     .filter(k => k !== "children")
     .forEach(k => {

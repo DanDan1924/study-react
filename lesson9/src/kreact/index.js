@@ -6,10 +6,8 @@ function createElement(type, config, ...children) {
     delete config.__self;
     delete config.__source;
   }
-  
   // 这个地方我们自己写的没有考虑细节，比如key、ref等
   const props = {
-    ...(type && type.defaultProps?{...type.defaultProps}:{}),
     ...config,
     children: children.map(child =>
       typeof child === "object" ? child : createTextNode(child)
