@@ -64,13 +64,16 @@ function createNode(vnode) {
 }
 
 // 类组件
-function updateClassComponent(vnode) {
-  const {type, props} = vnode;
-  let cmp = new type(props);
-  const vvnode = cmp.render();
-  // 生成node节点
-  const node = createNode(vvnode);
-  return node;
+function updateClassComponent(fiber) {
+  // const {type, props} = vnode;
+  // let cmp = new type(props);
+  // const vvnode = cmp.render();
+  // // 生成node节点
+  // const node = createNode(vvnode);
+  // return node;
+  const {type, props} = fiber;
+  const children = [new type(props).render()]
+  reconcileChildren(fiber, children);
 }
 
 // 函数组件
