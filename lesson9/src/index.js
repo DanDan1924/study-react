@@ -1,10 +1,13 @@
-import React from "./kreact/index";
-import ReactDOM, {useState} from "./kreact/react-dom";
-import Component from "./kreact/Component";
+// import React from "./kreact/index";
+// import ReactDOM, {useState} from "./kreact/react-dom";
+// import Component from "./kreact/Component";
 
-// import React, {Component, useState} from "react";
-// import ReactDOM from "react-dom";
+import React, {Component, useState} from "react";
+import ReactDOM from "react-dom";
 import "./index.css";
+import UseCallbackPage from './components/UseCallbackPage';
+import UseMemoPage from './components/UseMemoPage';
+
 
 class ClassComponent extends Component {
   static defaultProps = {
@@ -37,6 +40,9 @@ const jsx = (
     <a href="https://www.kaikeba.com/">开课吧</a>
     <ClassComponent name="class" color="red" />
     <FunctionComponent name="function" />
+    <UseCallbackPage />
+    <UseMemoPage />
+
     {/* {[1, 2].map(item => (
       <React.Fragment key={item}>{item}</React.Fragment>
     ))} */}

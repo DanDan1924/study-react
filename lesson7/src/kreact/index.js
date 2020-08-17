@@ -1,6 +1,7 @@
+
 import {TEXT} from "./const";
 
-// 创建react element，并返回
+// 创建并返回一个新的react element，根据你给定的type值
 function createElement(type, config, ...children) {
   if (config) {
     delete config.__self;

@@ -1,3 +1,17 @@
+/** 
+ * 1.什么是虚拟dom
+ * 是Js对象，用来描述dom信息和结构，当状态变更时，更新这个Js对象，重新渲染dom
+*/
+/**
+ * 2.action为什么diff虚拟dom对象不是真实dom对象
+ * 真实dom的代价比较大，轻微操作都可能导致页面重新排版，非常消耗性能。相对于DOM对象，js对象处理起来更快，更简单。
+ * 通过diff算法对比新旧vdom之间的差异，可以批量，最小化的执行dom操作，从而提升性能
+*/
+
+// babel-loader将它们转译成了React.createElement(...)形式（babel-loader在webpack里面）
+// 
+
+
 import {isArray} from "util";
 
 import {TEXT} from "./const";
