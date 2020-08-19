@@ -1,3 +1,30 @@
+/**
+ * reconciliation协调
+ * reconcileChildren
+ * 
+*/
+/**
+ * 1.为什么需要fiber
+ * 优先级  更流畅
+ * 2.什么是fiber
+ * 不同的任务（指组件上将要完成或者已经完成的任务，每个组件可以一个或多个）
+ * 3.实现fiber
+ * window.requestIdleCallback(callback[,options])方法再浏览器空闲时间段调用函数排队，开发者能在事件循环上执行后台和低优先级工作，不影响关键事件
+*/
+
+// useState为什么是数组？
+// 命名：平常用的对象结构的话命名写死了，数组结构的话可以随便给它命名，（最好追寻一定的规则）
+
+// Hook的作用
+// 1、在不用class的情况下用state等其他react特性
+// 2、在组件间复用状态逻辑
+// 3、可选的（想用就用，不想用就不用），记住版本号16.8(原因：现在很多第三方框架：umi，antd，router，redux 都用到了Hook)
+
+// Hook解决了什么问题  ？？
+
+// Hook Api
+// 基础Hook
+
 import {TEXT, PLACEMENT} from "./const";
 
 // 下一个单元任务  fiber

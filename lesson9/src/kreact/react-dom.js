@@ -1,29 +1,4 @@
 
-/**
- * reconciliation协调
- * reconcileChildren
- * 
-*/
-/**
- * 1.为什么需要fiber
- * 
- * 2.什么是fiber
-*/
-
-// useState为什么是数组？
-// 命名：平常用的对象结构的话命名写死了，数组结构的话可以随便给它命名，（最好追寻一定的规则）
-
-// Hook的作用
-// 1、在不用class的情况下用state等其他react特性
-// 2、在组件间复用状态逻辑
-// 3、可选的（想用就用，不想用就不用），记住版本号16.8(原因：现在很多第三方框架：umi，antd，router，redux 都用到了Hook)
-
-// Hook解决了什么问题  ？？
-
-// Hook Api
-// 基础Hook
-
-
 import {TEXT, PLACEMENT, UPDATE, DELETION} from "./const";
 
 // 下一个单元任务  fiber
